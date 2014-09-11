@@ -1,0 +1,2253 @@
+/*
+Theme Name: PASW 2015
+Description:
+Author: Comunità di pratica Porte aperte sul web - USR Lombardia
+Version: 0.2.1Tags:
+GitHub Theme URI: https://github.com/PorteAperteSulWeb/pasw2015beta
+GitHub Branch: master
+*/
+.clear:before,.clear:after {    content: " ";    display: table;}.clear:after {    clear: both;}.imglinks {	margin: 10px auto;	width: 100%;	text-align: center;}.imglinks a {	padding:20px;}
+
+.contatti {
+	float: right;
+	width: 300px;
+	height: 70px;
+	padding: 15px;
+	font-size: 0.8em;
+	text-align:right;
+}
+/***************** 3 Column Layout ******************/
+
+html {
+
+    margin: 0 auto;
+
+    padding: 0;
+
+}
+
+body {
+    color: #222222;
+	font-family: "Open Sans",sans-serif;
+    /* font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,sans-serif; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    background-color: #fff;	box-shadow: 0px 0px 10px #4F004F;
+    margin: 0 auto;
+    max-width: 1150px;
+    padding: 0;
+    width: 96%;
+}
+
+#container {
+
+    margin: 0;
+
+    padding: 0;
+
+    clear: both;
+
+}
+
+#leftsidebar {
+
+    float: left;
+
+    margin-top: 0;
+
+    max-width: 220px;
+
+    min-width: 122px;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    width: 20%;
+
+}
+
+#centrecontent {
+
+    float: left;
+
+    margin: 0;
+
+    max-width: 710px;
+
+    padding: 0 5px 5px 10px;
+
+    float: left;
+
+    width: 58%;
+
+}
+
+#rightsidebar {
+
+    float: right;
+
+    margin-top: 3px;
+
+    min-height: 120px;
+
+    overflow: hidden;
+
+    margin: 0;
+
+    max-width: 220px;
+
+    min-width: 122px;
+
+    padding: 5px 0 0 0;
+
+    width: 20%;
+
+    /*background: url("images/middleSfuma.jpg") repeat-x scroll left top transparent;*/
+
+}
+
+#footer  {	padding-bottom: 10px;
+	clear: both;
+    height: auto !important;		min-height: 25px;	height: 25px;	background-color: #4F004F;	color:white;
+}#footer a {	color:white;}
+
+#searchCSS {
+
+float:left;
+
+display:block;
+
+}
+
+/********************** Global **********************/
+
+p {
+
+	font-size: 0.9em;
+
+	line-height: 1.4em;
+
+	margin: 0.5em 0;
+
+}
+
+ol, ul{
+
+	margin: 1.2em 0 1.2em 2em;
+
+	padding: 0;
+
+	font-size: 0.8em;
+
+	line-height: 1.5em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {	font-weight:bold;
+}
+
+h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+
+	text-decoration: underline;
+
+}
+
+h1 {
+
+    	margin: 1em 0 0.5em;
+
+}
+
+h2 {
+
+	font-size: 1.3em;
+
+        margin: 1em 0 0.5em;
+
+}
+
+h3 {
+
+	font-size: 1.1em;
+
+        margin: 1em 0 0.5em;
+
+        font-weight: normal;
+
+}
+
+h4 {
+
+	font-size: 1em;
+
+	margin: 0.5em 0 0.3em;
+
+        font-weight: normal;
+
+}
+
+a{
+
+	text-decoration:underline;
+
+}
+
+a:link {
+
+	color:#000066;
+
+}
+
+a:visited {
+
+	color: #000066;
+
+}
+
+a:hover, a:active {
+
+	color: #000066;
+
+}
+
+a:hover {
+
+	text-decoration:none;
+
+}
+
+input, textarea, select  {
+	font-size: 1em;
+	border: 1px solid #999;
+	background-color: #FAFAF0;
+	color: #3A291F;
+}
+
+blockquote {
+
+	font-size: 0.9em;
+
+	margin: 0 20px;
+
+	padding: 0 20px;
+
+	border-left: 4px solid #E8E8CE;
+
+}
+
+form, img {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+}
+
+.hidden{
+
+	visibility: hidden;
+
+}
+
+.nascosto {
+
+	background: #fff;
+
+	color: #000;
+
+	left: -10000px;
+
+	top: -10000px;
+
+	position: absolute;
+
+}
+
+#searchCSS {
+
+	margin:0;
+
+	padding:0;
+
+}
+
+code {
+
+}
+
+.code {
+
+    background: #F0F0F0;
+
+	padding: 10px;
+
+	margin: 10px 60px;
+
+	border: 1px dotted black;
+
+	color: #000;
+
+	font-family: Monaco,"Courier New",Courier,monospace;
+
+	font-size: 85%;
+
+}
+
+.small {
+
+	font-size: 0.9em;
+
+	color: #999;
+
+}
+
+.current_page_item a {
+
+	color: #000 !important;
+
+	text-decoration:none;
+
+	background-color: #fff;
+
+}
+
+.current_page_item ul li a {
+
+	background-color: #fff;
+
+	color: #000 !important;
+
+	text-decoration:none;
+
+}
+
+/********************** Header **********************/
+
+#img-header{
+	background: url(images/Scuole.png);
+	min-height: 120px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+/* Structure */
+
+#header {
+
+	padding: 0px;
+
+	margin: 0px;
+
+    height: auto !important;
+
+    min-height: 110px;
+
+	/* background-color: #FAFAF0; */
+
+	/* background: transparent url(images/middleSfuma.jpg) top left repeat-x; */
+
+}
+
+/* Essential Layout (IE7 Fix) */
+
+*+html #header{
+
+	padding-bottom: 15px;
+
+}
+
+/* Essential Layout (IE6 Fix) */
+
+* html #header{
+
+	padding-bottom: 15px;
+
+}
+
+#header img.logo {
+
+	float:left;
+
+	margin: 0 5px 15px 5px;
+
+}
+
+#header p{
+
+	padding: 0px;
+
+	margin: 4px 0 0 0;	
+
+	/*height: 23px;*/
+
+}
+
+#header h1 {
+	font-size: 2.5em;
+	padding: 0px;
+	margin: 0 0 0px 10px;
+    font-weight: bold;
+}
+
+#header h1 a {
+
+	text-decoration: none;
+
+	color: #003366;
+
+}
+
+#header p{
+
+	font-size:0.75em;
+
+}
+
+#header ul {	
+	font-size: 0.75em;
+	text-align: left;
+	line-height: 15px;
+}
+
+#header ul.sito {	
+	height: 19px;
+	width: 100%;
+	padding: 2px 0;	
+	margin: 0px;
+	color: #F0F0F0;
+}
+
+#header ul li {
+
+	margin: 0px;
+
+	display: inline;
+
+}
+
+#header ul li a {
+
+	text-decoration: none;
+
+	color: #003366;
+
+}
+
+#header ul li a:hover{
+
+	background: #F0F0F0;
+
+	color: #3A291F;
+
+}
+
+#header ul.sito li a{
+
+	padding: 2px 10px 2px 10px;
+
+	float:right;
+
+}
+
+#header ul.sito li.current_page_item a
+
+{
+
+	background: #F0F0F0;
+
+	color: #3A291F;
+
+}
+
+#header ul.sito li.current_page_item a:hover
+
+{
+
+	text-decoration:none !important;
+
+	color: #3A291F !important;
+
+}
+
+#topbar{
+
+    height: auto !important;	
+
+	min-height: 25px;
+
+    width: 100%;
+
+	padding: 0;	
+
+	margin: -14px 0 0 0;	
+
+}
+
+#topbar ul{	
+	font-size: 0.9em;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+#topbar li a{
+
+	padding: 3px 10px 3px 10px;
+
+	float:left;
+
+	border-right: 1px solid;
+
+	border-right-color: #F0F0F0;
+
+}
+
+#topbar ul li{
+
+	margin: 0px;
+
+	display: inline;
+
+}
+
+#topbar ul li a{
+
+	text-decoration: none;
+
+	color: #F0F0F0;
+
+}
+
+#topbar ul li a:hover{
+
+	background: #F0F0F0;
+
+	color: #3A291F;
+
+}
+
+#topbar ul li.current_page_item a
+
+{
+
+	text-decoration:none !important;
+
+	color: #3A291F !important;
+
+	background: #F0F0F0;
+
+}
+
+#topbar ul li.current_page_item a:hover
+
+{
+
+	text-decoration:none !important;
+
+	color: #3A291F !important;
+
+}
+
+/* Essential Layout (IE7 Fix) */
+
+*+html #topbar li a {
+
+	margin-top: -14px;
+
+}
+
+/******************* Main Content *******************/
+
+/* Structure */
+
+/*
+
+#centrecontent h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+
+text-decoration: none; 
+
+}
+
+ */
+
+#centrecontent ul { 
+
+    margin-top: 0;
+
+}
+
+#path {
+
+clear:both;
+
+padding-left: 8px;
+
+padding-top: 8px;
+
+font-size:0.8em;
+
+margin-top:0.8em;
+
+}
+
+#path a:hover{
+
+text-decoration:none;
+
+}
+
+/********** Previous and Next by Catagory ***********/
+
+/* Structure */
+
+#postnavigation
+
+{	
+
+	display: inline;
+
+	float: right;
+
+	margin: 0px 0px 5px 5px;
+
+	padding: 0em 0.5em 0em 0.5em;
+
+	border: 1px solid #E8E8CE;
+
+	background-color: #FAFAF0;
+
+	font-size: 0.75em;	
+
+}
+
+#postnavigation ul 
+
+{
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+#postnavigation li 
+
+{
+
+	margin-left: 1.0em;
+
+}
+
+#postnavigation .navheader {
+
+	font-size: 1.25em;
+
+	font-weight: bolder;
+
+	list-style-type: none;
+
+	margin-left: 0em;
+
+}
+
+#postnavigation ul 
+
+{
+
+	list-style-type: none;
+
+}
+
+/******************* Left Sidebar *******************/
+
+/* Structure */
+
+#leftsidebar h2 
+
+{
+
+	display:block;
+
+	/*margin: 0.6em 0 0.3em 0;*/
+
+	margin: 0 0.8em 0.2em 0.8em;
+
+	/*padding-left:0.8em;*/
+
+	/*margin-left:0.8em;*/
+
+	padding-top:0.3em;
+
+	/*background:#004100;*/
+
+	text-decoration:none;
+
+	font-size: 1.0em;
+
+}
+
+#leftsidebar h2 a{
+
+	display:block;
+
+	text-decoration:none;
+
+}
+
+#leftsidebar h2 a:hover {
+
+	display:block;
+
+}
+
+#leftsidebar ul {
+
+	list-style-type: none;
+
+	font-size:95%;
+
+	margin:  0;
+
+	padding: 0;
+
+}
+
+#leftsidebar ul li a {
+
+	text-decoration: none;
+
+	}
+
+#leftsidebar ul li a:hover {
+
+text-decoration:underline;
+
+}
+
+#leftsidebar ul ul {
+
+	margin: 0.2em 0 0.5em 0.6em;
+
+	/*border-top: 1px solid #E8E8CE;*/
+
+	/*background-color: #FAFAF0;*/
+
+}
+
+*+#leftsidebar ul ul {
+
+	border: 1px solid transparent;
+
+}
+
+#leftsidebar ul ul li {
+
+	padding: 0 0 0 10px;
+
+	margin:0 0.9em 0 0.3em;
+
+	font-size: 90%;
+
+	line-height:170%;
+
+}
+
+#leftsidebar ul ul li a{
+
+	margin: 0 0 0 -10px;
+
+	padding: 0 10px;
+
+	voice-family: "\"}\""; 
+
+	voice-family: inherit;
+
+	text-decoration: none;
+
+	display:block;	
+
+}
+
+html>body #leftsidebar ul ul li a 
+
+{
+
+	/*width: 170px;*/
+
+	/*background-color: #FFF;*/
+
+}
+
+#leftsidebar ul ul ul 
+
+{
+
+	margin: 0;
+
+}
+
+#leftsidebar ul ul ul li {
+
+	margin: 0 0 0 -10px;
+
+	padding: 0 0 0 25px;
+
+	border-bottom: none;
+
+	border-top: 1px solid #E8E8CE;
+
+}
+
+#leftsidebar ul ul ul li a {
+
+	margin: 0 0 0 -25px;
+
+	padding: 0em 10px 0em 25px;
+
+}
+
+/****************** Right Sidebar *******************/
+
+/* Structure */
+
+#rightsidebar h2 {
+
+	font-size: 0.85em;
+
+	margin: 0.6em 0 0.3em 0;
+
+	display:block;
+
+	/*padding-left:0.6em;	*/
+
+/*	padding-top:3px;*/
+
+/*	background:#004100;*/
+
+	text-decoration:none;
+
+	font-weight: bold;
+
+}
+
+#rightsidebar h2 a{	
+
+	display:block;
+
+	padding-left:0.6em;
+
+}
+
+#rightsidebar h2.sez_utenti{
+
+	background-color:#fff;
+
+	color:#039;
+
+	font-size:1.4em;
+
+	margin-bottom:-1px;
+
+	padding-bottom: 4px;
+
+	margin-left: -20px;
+
+	padding-left: 20px;
+
+}
+
+#rightsidebar ul {
+
+	margin: 10px;
+
+	/*padding: 0;*/
+
+	padding: 0 8px 0 8px;
+
+	list-style-type: none;
+
+	font-size:95%;
+
+}
+
+#rightsidebar li.widget  {
+
+margin-top: 10px;
+
+}
+
+#rightsidebar #wpmenudati ul  {
+
+background-color: transparent;
+
+border: 0;
+
+font-size: 0.8em;
+
+}
+
+#rightsidebar ul li a {
+
+	margin-left: -20px;
+
+	padding-left: 20px;
+
+    display:block;
+
+	/*background: #fff;*/
+
+	text-decoration: none;
+
+}
+
+#rightsidebar ul li a:hover {
+
+text-decoration:underline;
+
+}
+
+#rightsidebar ul ul {
+
+	margin: 0.1em 0 0.8em 0;
+
+	border: 0;
+
+	font-size:85%;
+
+	/*border-top: 1px solid #E8E8CE;
+
+	background-color: #FAFAF0;*/
+
+}
+
+#rightsidebar ul ul li {
+
+    padding-bottom: 4px;
+
+    border-bottom: 1px dotted #C2E3ED;
+
+	/*padding: 0 0 0 10px;
+
+	border-bottom: 1px solid #E8E8CE;*/
+
+}
+
+#rightsidebar ul ul li a {
+
+	margin: 0 0 0 -10px;
+
+	padding: 0 10px;
+
+	voice-family: "\"}\""; 
+
+	voice-family: inherit;
+
+	text-decoration: none;
+
+} 
+
+/*
+
+html>body #rightsidebar ul ul li a 
+
+{
+
+	width: 140px;
+
+}
+
+*/
+
+#rightsidebar ul ul ul {
+
+	margin: 0;
+
+	border: none;
+
+}
+
+#rightsidebar ul ul ul li {
+
+	margin: 0 0 0 -10px;
+
+	padding: 0 0 0 25px;
+
+	border-bottom: none;
+
+	border-top: 1px solid #E8E8CE;
+
+}
+
+#rightsidebar ul ul ul li a {
+
+	margin: 0 0 0 -25px;
+
+	padding: 0em 10px 0em 25px;
+
+} 
+
+#rightsidebar li.current-cat a{
+
+	color: #000 !important;
+
+}
+
+#rightsidebar li.active a, #rightsidebar ul ul li.active a {
+
+        font-weight: bold;
+
+}
+
+/********************** Footer **********************/
+#footer {
+}
+#footer p {
+	font-size: 0.75em;
+	margin: 0;
+    padding: 5px;	line-height: 1.2em;
+}
+/******************* Search Widget ******************/
+
+#searchform  {
+
+	margin: 10px 0px;
+
+}
+
+#searchform #s  {
+
+	width: 110px;
+
+}
+
+/***************** Calendar Styles ******************/
+
+/* Structure */
+
+#wp-calendar {
+
+	font-size: 0.8em;
+
+	line-height: 1.2em;
+
+	text-align: center;
+
+    margin: 0 0 1.2em 0;
+
+	voice-family: "\"}\""; 
+
+	voice-family: inherit;
+
+    width: 160px;
+
+	/*border: 1px solid #E8E8CE;*/
+
+	/*background: #FAFAF0;	*/
+
+} 
+
+html>body #wp-calendar {
+
+	/*width: 168px;*/
+
+	width: 160px;
+
+}
+
+#wp-calendar caption {
+
+	font-weight: bold;
+
+    margin: 1.2em 0 0 0;
+
+    padding: 0.4em 0;
+
+/*	background: #004100;  
+
+        color: #FFF;*/
+
+}
+
+#wp-calendar caption {
+
+	font-weight: bold;
+
+	margin: 1.2em 0 0 0;
+
+	padding: 0.4em 0;
+
+	/*background: #004100;  
+
+	color: #FFF;*/
+
+}
+
+#wp-calendar td {
+
+    border: 0;
+
+	border-collapse: collapse;
+
+	/*background: #FFF;*/
+
+}
+
+#wp-calendar td a {
+
+	display: block;
+
+	width: 100%;
+
+}
+
+#wp-calendar td.pad {
+
+	background: transparent;
+
+}
+
+#wp-calendar td#next {
+
+	text-align: right;
+
+}
+
+#wp-calendar td#prev {
+
+	text-align: left;
+
+}
+
+#wp-calendar td#next, #wp-calendar td#prev {
+
+	padding: 0.1em 2px;
+
+	background: transparent;
+
+}
+
+#wp-calendar td#next a, #wp-calendar td#prev a {
+
+	display: inline;
+
+}
+
+/********************** Blog ************************/
+
+.postentry, .postfeedback{
+
+	margin-left: 1em;
+
+}
+
+/* integrazione alberto */
+
+.posttitle, .pagetitle {
+
+        font-weight: normal;
+
+   	margin-bottom: 10px;
+
+   	margin-top: 15px;
+
+        width: 100%;
+
+	overflow: auto;
+
+	/* Width and overflow to clear '.posttitle a' */
+
+}
+
+.posttitle a, .pagetitle a {
+
+	float: left;
+
+	padding: 0 10px;
+
+        color: #003366;
+
+}
+
+.postmeta {
+
+	font-size: 0.9em;
+
+	margin-top: 0;
+
+	padding-top: 1px;
+
+} 
+
+.circ {
+
+	margin-top: -20px;
+
+	padding-top: 1px;
+
+}
+
+.permalink {
+
+	margin: 0 1.8em 0 0;
+
+	padding: 0 0 0 14px;
+
+	background: url(images/permalink.gif) no-repeat center left;
+
+}
+
+.commentslink, .trackbacklink{
+
+	margin: 0 1.8em 0 0;
+
+	padding: 0 0 0 17px;
+
+	background: url(images/commentslink.gif) no-repeat center left;
+
+}
+
+#comments{
+
+	width: 98%;
+
+	float: left;
+
+	margin: 0em;
+
+	padding-bottom: 0.5em;
+
+}
+
+.children, #commentlist {
+
+	list-style-type: none;
+
+}
+
+#commentlist {
+
+	clear:left;
+
+	margin: 0em;
+
+	padding: 0;
+
+	border-bottom: 1px solid #E8E8CE;
+
+}
+
+#commentlist li {
+
+	padding: 1px 20px 20px 20px;
+
+	border-top: 1px solid #E8E8CE;
+
+	background-color: #FFF;
+
+}
+
+.comment-author {
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: bold;
+	margin: 0.5em 0em 0em 0em;
+}
+
+.comment-author .avatar{
+
+	float:left;
+
+	margin: 0px 10px 5px 0px;
+
+}
+
+.fn{
+
+	font-style: normal;
+
+}
+
+.comment-meta {
+
+	font-size: 0.9em;
+
+	color: #999;
+
+	margin-top: 0px;
+
+}
+
+.alt {
+
+	background-color: #FAFAF0 !important;
+
+}
+
+.bypostauthor{
+
+	background-color: #F0F0F0 !important;
+
+}
+
+.reply{
+
+	font-size: smaller;
+
+	text-align: right;
+
+	display: block;
+
+	margin-top: -1.8em;
+
+}
+
+#cancel-comment-reply{
+
+	margin-right: 2em;
+
+}
+
+#respond{
+
+	clear: both;
+
+	margin-top: 10px;
+
+}
+
+li #respond{
+
+	border-top: 1px solid black;
+
+}
+
+.navigation-bottom{
+
+	height: 1em;
+
+	margin-top: 5px;
+
+	margin-bottom: 15px;
+
+}
+
+.navigation-top{
+
+	height: 1em;
+
+	margin: 0px;
+
+	padding-top: 1em;
+
+}
+
+.navigation-bottom p{
+
+	margin-top: 0px;
+
+	margin-bottom: 0px;
+
+}
+
+.navigation-top p{
+
+	margin-top: 0px;
+
+	margin-bottom: 0px;
+
+}
+
+/********************* Images ***********************/
+
+p img {
+
+	padding: 0;
+
+	max-width: 100%;
+
+}
+
+/*	
+
+	Using 'class="alignright"' on an image will (who would've
+
+	thought?!) align the image to the right. And using 'class="centered',
+
+	will of course center the image. This is much better than using
+
+	align="center", being much more futureproof (and valid) 
+
+*/
+
+.aligncenter, div.aligncenter, img.centered {
+
+	display: block;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+}
+
+img.alignright {
+
+	padding: 4px;
+
+	margin: 0 0 2px 7px;
+
+	/*display: inline;*/
+
+	clear: both;
+
+}
+
+img.alignleft {
+
+	padding: 4px;
+
+	margin: 0 7px 2px 0;
+
+	display: block;
+
+	clear:both;
+
+}
+
+.alignright {
+
+	float: right;
+
+}
+
+.alignleft {
+
+	float: left
+
+}
+
+.reallysmallthumbs a img{
+
+	width: 60px;
+
+	height:60px;
+
+	float: left;
+
+	margin: 1px;
+
+}
+
+.wp-caption {
+
+	background: #F0F0F0;
+
+}
+
+.wp-caption-text {
+
+	font-size: 90%;
+
+	padding: 0 4px;
+
+}
+
+/******************* Geo Mashup *********************/
+
+.locationinfo {
+
+	overflow:auto;
+
+	height:195px;
+
+	width:320px;
+
+	font-size:70%;
+
+	/* used to allow room for the info window x icon */
+
+	margin: 0px 10px 0px 0px;
+
+}
+
+.locationinfo h2 a{		
+
+	margin: 0px;
+
+}
+
+.locationinfo p{		
+
+	margin: 0px;
+
+}
+
+.locationinfo img{	
+
+	height:108px;
+
+	width:auto;
+
+}
+
+/********************* Sociable *********************/
+
+.sociable_tagline{
+
+	display: none;
+
+}
+
+.sociable ul{
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+.sociable{
+
+	margin: 0em 0em -1em 0em;
+
+}
+
+.sociable li{
+
+	background: none;
+
+	display: inline;
+
+	list-style-type: none;
+
+	margin: 0;
+
+	padding: 0px 1px 0px 1px;
+
+}
+
+/***************** Twitter Widget *******************/
+
+#twitter-list{
+
+	font-size: 0.9em;
+
+}
+
+/****************** Holly Hacks *********************/
+
+/* holly hacks to fix peekabo bugs in IE */
+
+/* Hides from IE5-mac \*/
+
+* html li {height: 1%;}
+
+/* End hide from IE5-mac */
+
+/* Hides from IE5-mac \*/
+
+* html #postnavigation {width: 145px; height: 2px;}
+
+/* End hide from IE5-mac */
+
+html>body #leftsidebar ul ul ul li a 
+
+{
+
+	width: 135px;
+
+}
+
+html>body #rightsidebar ul ul ul li a 
+
+{
+
+	width: 95px;
+
+}
+
+/******** HOME PAGE ************/
+
+#home-left {
+
+        width: 49%;
+
+        float: left;
+
+    	margin-left: 5px;
+
+        font-size: 0.9em;
+
+}
+
+#home-left p, #home-right p{
+
+        line-height: 1.4em;
+
+}
+
+#home-left h2, #home-left h3, #home-left p {
+
+    padding-right: 15px;
+
+    font-weight: normal;
+
+}
+
+#home-left h2, #home-right h2 {
+
+    margin-top: 15px;
+
+    font-size: 1.2em;
+
+}
+
+#home-right {
+
+         width: 47%;
+
+         float: right;
+
+        font-size: 0.9em;
+
+}
+
+#home-right h2, #home-right h3, #home-right p {
+
+    padding-right: 10px;
+
+    font-weight: normal;
+
+}
+
+#centrecontent #home-right h3 {
+
+    font-size: 1em;
+
+} 
+
+#centrecontent #home-right p {
+
+    padding-left: 10px;
+
+}
+
+#centrecontent #home-right h3 a {
+
+    margin-bottom: 0;
+
+}
+
+#home-right p.dx {
+
+    padding-left: 0;
+
+    text-align: right;
+
+    font-style: italic;
+
+}
+
+/**************** pagina categorie *******************/
+
+#centrecontent table {
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	width: 99%;
+
+	/*border: 10px solid #0066CC;*/
+
+	margin-top: 1em;
+
+	margin-bottom: 1em;
+
+	font-size: 0.8em;
+
+	background-color: #BFDFFF;	
+
+}
+
+#centrecontent caption {
+
+	display: none;
+
+}
+
+#centrecontent table th, #centrecontent table td {
+
+	padding: 6px;
+
+}
+
+#centrecontent table th {
+
+	text-align: left;
+
+}
+
+#centrecontent table tr.tdalt td{
+
+	background-color: #FFFFFF;
+
+}
+
+.riassunto {
+
+	border: none;
+
+	margin-top: 10px;	
+
+	padding: .5em;
+
+}
+
+.riassunto p, p.riassunto {
+
+	margin: 0;
+
+	padding: 0;
+
+	font-size: 0.8em;
+
+        line-height: 140%;
+
+}
+
+.tdalt {
+
+	background-color: #FFFFFF;
+
+}
+
+/**************** pagina categorie *******************/
+
+.news {
+
+margin-top:10px;
+
+padding: 0 0.4em;
+
+font-size: 95%;
+
+}
+
+.news h3 {
+
+color: #000;
+
+border-bottom: 1px dotted #000066;
+
+} 
+
+.news .postmeta {
+
+margin-top: -6px;
+
+} 
+
+.news .postmeta a {
+
+color: #000;
+
+} 
+
+.news p {
+
+} 
+
+/**************** sottopagine *******************/
+
+.gerarchia {
+
+	font-size: 0.9em;
+
+	float: right;
+
+	border: 1px dotted #ccc;
+
+	padding: 4px 6px;
+
+	list-style-type: none;
+
+	background: #F0F0F0;
+
+}
+
+/***************** mappa *********************/
+
+#left {
+
+         width: 64%;
+
+         float: left;
+
+}
+
+#right {
+
+         width: 34%;
+
+         float: right;
+
+}
+
+/****************albert*****************/
+
+#rightsidebar h2.motore, .screen-reader-text {
+
+display: none;
+
+}
+
+/******************* Search Widget albert******************/
+
+#searchform  {
+
+	margin: 10px 0px;
+
+}
+
+#searchform #s  {
+
+	width: 100px;
+
+}
+
+#leftsidebar ul ul ul {
+
+	display: none;
+
+}
+
+h4.piccino {
+
+    font-size: 0.95em;
+
+    font-weight: normal;
+
+    line-height: 1.4em;
+
+    margin: 0.75em 0 0.25em;
+
+}
+
+.piccolino {
+
+    font-size: 0.9em;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.piccolino p {
+
+    font-size: 1em;
+
+    line-height: 1.4em;
+
+    margin-bottom: 6px;
+
+    margin-top: 0;
+
+    padding: 0;
+
+}
+
+/* tabelle per vista circolari */
+
+#centrecontent ol.alfa {
+
+	list-style-type: lower-alpha;
+
+}
+
+#centrecontent ol.romano {
+
+	list-style-type: upper-roman;
+
+}
+
+#sotto-hp {
+
+    background-color: #FFFFFF;
+
+    border-bottom: 8px solid #FFFFFF;
+
+    clear: both;
+
+    color: #000000;
+
+    margin-bottom: 8px;
+
+    padding-top: 5px;
+
+    font-size: 0.85em;
+
+}
+
+#sotto-hp .col-com2 h2 a {
+
+    font-weight:normal;
+
+    line-height: 130%;
+
+    text-decoration: none;
+
+}
+
+.col-com2 {
+
+    width: 30.5%;
+
+    float: left;
+
+    margin-right:5px;
+
+    padding: 4px;
+
+}
+
+.col-com2 ul {
+
+		margin: 5px;
+
+}
+
+.col-com2 a:hover {
+
+		text-decoration: underline;
+
+}
+
+.col-com2 li {
+
+	line-height: 120%;
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+}
+
+.col-com2 li li {
+
+	line-height: 130%;
+
+	margin: 5px;
+
+	padding-left: 10px;
+
+	list-style-type: none;
+
+    font-size:1.1em;
+
+}
+
+/* stile circolare */
+
+.mittente {
+
+        font-size:0.8em;
+
+        text-align:center;
+
+        margin-top: 1.5em;
+
+        line-height: 1.4em;
+
+        margin-bottom: 1.5em;
+
+}
+
+.sigla {
+
+        font-size:0.8em;
+
+        margin-top: 1.5em;
+
+}
+
+.destinatari {
+
+        font-size:0.9em;
+
+        margin-top: 1em;
+
+        margin-bottom: 0.5em;
+
+}
+
+.destinatari p {
+
+        padding-bottom:0.5em;
+
+        margin: 0;
+
+        line-height: 1.4em;
+
+}
+
+.firma {
+
+        margin-top: 1.5em;
+
+        margin-bottom: 1em;
+
+        text-align:center;
+
+}
+
+.firma1, .firma2 {
+
+    text-align:center;
+
+    float:left;
+
+    width:35%;
+
+}
+
+.firma p, .firma1 p, .firma2 p {
+
+    display:block;
+
+}
+
+.firma1 img, .firma2 img {
+
+margin-right:auto;
+
+margin-left:auto;
+
+}
+
+.oggetto {
+
+        font-size:0.9em;
+
+        margin-top: 1em;
+
+        margin-bottom: 1em;
+
+}
+
+/*
+
+address {
+
+font-size: 0.9em;
+
+}
+
+/*footbar*/
+
+#footbar{
+
+        height: auto !important;	
+
+	min-height: 21px;
+
+        width: 100%;
+
+	padding: 0;	
+
+        margin: -14px 0 0 0;
+
+        clear:both;
+
+        display:block;
+
+}
+
+#footbar ul{	
+	font-size: 0.8em;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+#footbar li a{
+
+	padding: 1px 10px 3px 10px;
+
+	float:left;
+
+	border-right: 1px solid;
+
+	border-right-color: #F0F0F0;
+
+}
+
+#footbar ul li{
+
+	margin: 0px;
+
+	display: inline;
+
+}
+
+#footbar ul li a{
+
+	text-decoration: none;
+
+	color: #F0F0F0;
+
+}
+
+#footbar ul li a:hover{
+
+	background: #F0F0F0;
+
+	color: #3A291F;
+
+}
+
+#footbar ul li.current_page_item a {
+
+	text-decoration:none !important;
+
+	color: #3A291F !important;
+
+	background: #F0F0F0;
+
+}
+
+#footbar ul li.current_page_item a:hover {
+
+	text-decoration:none !important;
+
+	color: #3A291F !important;
+
+}
+
+/* Essential Layout (IE7 Fix) */
+
+*+html #footbar li a {
+
+	margin-top: -14px;
+
+}
+
+/* ul diversi*/
+
+.ulpuntato li {
+
+	list-style-image: url(images/square.gif);
+
+	font-weight: bold;
+
+	padding-bottom: 1em;
+
+}
+
+.ulsenzapunto {
+
+	list-style-image: none;
+
+}
+
+/*fine footbar*/
+
+abbr, acronym {
+
+       cursor: help;
+
+}
+
+#centrecontent img {
+
+       padding:2px;
+
+       border: 1px dashed #5F7F5F;
+
+}
+
+#centrecontent dd {
+
+       font-size: 0.8em;
+
+       line-height: 1.5em;
+
+}
+
+#centrecontent .gacounter ul {
+
+       list-style-type: none;
+
+}
+
+/* alberto ritocchi */
+
+.postmeta {
+
+    font-size: 0.8em;
+
+    line-height: 1.5em;
+
+}
+
+table.ec3_schedule {
+
+display: none;
+
+} 
+
+.riassunto {
+
+    background-color: #DEEFF6;
+
+    margin-bottom: 1.5em;
+
+}
+
+#comments, h2.pagetitle {
+
+    font-weight: normal;
+
+}
+
+ul ul, ul ol, ol ol, ol, ul {
+
+    font-size:0.9em;
+
+}
+
+#centrecontent li {
+
+   padding-bottom:0.5em;
+
+}
+
+#centrecontent li li {
+
+   padding-bottom:0;
+
+}
+
+h3.piccino {
+
+    font-size: 0.95em;
+
+    font-weight: normal;
+
+    line-height: 1.4em;
+
+    margin: 0.75em 0 0.25em;
+
+}
+
+h3.posttitle, h3.pagetitle {
+
+    border-bottom: none;
+
+}

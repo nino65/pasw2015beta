@@ -1,0 +1,109 @@
+body {
+    background: #E293FD;
+}
+
+/******** sfumato o no ************/
+
+#header {
+        /*background: url("images/middleSfuma.jpg") repeat-x scroll left top transparent;*/
+}
+
+#leftsidebar ul li.categories, 
+#leftsidebar ul li.widget_nav_menu {
+        /*background: transparent url(images/menuSfuma.jpg) left top repeat-x;*/
+        background: #E0C8EC;
+}
+
+#footer {
+	/*background: transparent url(images/menuSfuma.jpg) left bottom repeat-x;*/
+}
+
+
+/******** FINE sfumato o no ************/
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #4F004F;
+}
+
+#topbar{
+	background-color: #4F004F;
+	color: #F0F0F0;	
+}
+#postnavigation .navheader {
+	color: #4F004F; 
+}
+#leftsidebar h2 
+{
+	color: #4F004F;
+	border-bottom: 1px solid #4F004F;
+}
+#leftsidebar h2 a{
+	color: #fff;
+	background:#4F004F;
+}
+
+#leftsidebar ul ul li {
+	border-bottom: 1px dotted #4F004F;
+}
+
+#rightsidebar ul, #leftsidebar h2 a:hover, #leftsidebar ul ul ul li a:hover, #leftsidebar ul ul li a:hover, #rightsidebar h2 a:hover, #rightsidebar ul ul li a:hover, #rightsidebar ul ul ul li a:hover {
+	background: #F0E5F0;
+	color: #4F004F;
+}
+
+#rightsidebar h2 {
+	color: #4F004F;
+	border-bottom: 1px dotted #4F004F;
+}
+
+#rightsidebar li.active a, #rightsidebar ul ul li.active a, #leftsidebar li.active a {
+        background-color:#F0E5F0!important;
+        color:#4F004F!important;
+}
+
+#footer p {
+	border-top: 1px solid #4F004F;
+}
+
+.posttitle, .pagetitle {
+	color: #4F004F;
+	border-bottom:1px dashed #4F004F;
+}
+
+.postmeta .postauthor, .comment-author {
+	color: #4F004F;
+}
+
+
+/******** HOME PAGE ************/
+
+#home-left {
+    	border-right: 1px dotted #4F004F;
+}
+
+#sotto-hp .col-com2 h2 a {
+    color: #4F004F;
+}
+.col-com2 {
+    background-color:#F0E5F0;
+}
+
+#centrecontent table th {
+	background-color: #E0C8EC;
+	border-bottom: 1px solid #4F004F;
+	color: #4F004F;
+}
+
+#centrecontent table td {
+	background-color: #F0E5F0;
+	border-bottom:1px solid #CDCDCD;
+}
+.riassunto{
+	background-color: #F0E5F0;
+}
+
+#footbar{
+	background-color: #4F004F;
+	color: #F0F0F0;	
+}

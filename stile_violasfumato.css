@@ -1,0 +1,109 @@
+body {
+    background: #E293FD;
+}
+
+/******** sfumato o no ************/
+
+#header {
+        background: url("images/middleSfumaviola.jpg") repeat-x scroll left top transparent;
+}
+
+#leftsidebar ul li.categories, 
+#leftsidebar ul li.widget_nav_menu {
+        background: transparent url(images/menuSfumaviola.jpg) left top repeat-x;
+        /*background: #E0C8EC;*/
+}
+
+#footer {
+	background: transparent url(images/menuSfumaviola.jpg) left bottom repeat-x;
+}
+
+
+/******** FINE sfumato o no ************/
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #320032;
+}
+
+#topbar{
+	background-color: #320032;
+	color: #F0F0F0;	
+}
+#postnavigation .navheader {
+	color: #320032; 
+}
+#leftsidebar h2 
+{
+	color: #320032;
+	border-bottom: 1px solid #320032;
+}
+#leftsidebar h2 a{
+	color: #fff;
+	background:#320032;
+}
+
+#leftsidebar ul ul li {
+	border-bottom: 1px dotted #320032;
+}
+
+#rightsidebar ul, #leftsidebar h2 a:hover, #leftsidebar ul ul ul li a:hover, #leftsidebar ul ul li a:hover, #rightsidebar h2 a:hover, #rightsidebar ul ul li a:hover, #rightsidebar ul ul ul li a:hover {
+	background: #F0E5F0;
+	color: #320032;
+}
+
+#rightsidebar h2 {
+	color: #320032;
+	border-bottom: 1px dotted #320032;
+}
+
+#rightsidebar li.active a, #rightsidebar ul ul li.active a, #leftsidebar li.active a {
+        background-color:#F0E5F0!important;
+        color:#320032!important;
+}
+
+#footer p {
+	border-top: 1px solid #320032;
+}
+
+.posttitle, .pagetitle {
+	color: #320032;
+	border-bottom:1px dashed #320032;
+}
+
+.postmeta .postauthor, .comment-author {
+	color: #320032;
+}
+
+
+/******** HOME PAGE ************/
+
+#home-left {
+    	border-right: 1px dotted #320032;
+}
+
+#sotto-hp .col-com2 h2 a {
+    color: #320032;
+}
+.col-com2 {
+    background-color:#F0E5F0;
+}
+
+#centrecontent table th {
+	background-color: #E0C8EC;
+	border-bottom: 1px solid #320032;
+	color: #320032;
+}
+
+#centrecontent table td {
+	background-color: #F0E5F0;
+	border-bottom:1px solid #CDCDCD;
+}
+.riassunto{
+	background-color: #F0E5F0;
+}
+
+#footbar{
+	background-color: #320032;
+	color: #F0F0F0;	
+}

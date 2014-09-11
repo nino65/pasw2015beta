@@ -1,0 +1,151 @@
+body {
+    background: #C00000;
+}
+
+/******** sfumato o no ************/
+
+#header {
+    /*background: url("images/middleSfuma.jpg") repeat-x scroll left top transparent;*/
+}
+
+#leftsidebar ul li.categories, 
+#leftsidebar ul li.widget_nav_menu {
+    /*background: transparent url(images/menuSfuma.jpg) left top repeat-x;*/
+      background: #E0FEC8;
+}
+
+#footer {
+	/*background: transparent url(images/menuSfuma.jpg) left bottom repeat-x;*/
+}
+
+#leftsidebar .current_page_item a, #leftsidebar .current_page_item ul li a {
+	color: #004100 !important;
+	text-decoration:none;
+	background-color: #FFF2C1;
+}
+
+/******** FINE sfumato o no ************/
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #004100;
+}
+
+#topbar{
+	background-color: #004100;
+	color: #F0F0F0;	
+}
+#postnavigation .navheader {
+	color: #004100; 
+}
+#leftsidebar h2 
+{
+	color: #004100;
+	border-bottom: 1px solid #004100;
+}
+#leftsidebar h2 a{
+	color: #fff;
+	background:#004100;
+}
+#leftsidebar h2 a:hover {
+	/*background: #F0F0F0;
+	color: #3A291F;*/
+	background: #FFF2C1;
+	color: #004100;
+}
+#leftsidebar ul ul li {
+	border-bottom: 1px dotted #004100;
+}
+#leftsidebar ul ul li a:hover 
+{
+	background: #FFF2C1;
+	color: #004100;
+}
+#leftsidebar ul ul ul li a:hover {
+	/*background-color: #ECF5FF;
+	color: #000;*/
+	background: #FFF2C1;
+	color: #004100;
+}
+
+#rightsidebar h2 {
+	color: #004100;
+	border-bottom: 1px dotted #004100;
+}
+
+#rightsidebar h2 a:hover {
+	/*background-color: #ECF5FF;
+	color: #000;*/
+	background: #FFF2C1;
+	color: #004100;
+}
+#rightsidebar ul {
+	background-color: #FFF2C1;
+	border: 1px solid #fff; 
+}
+#rightsidebar ul ul li a:hover {
+	background: #FFF2C1;
+	color: #004100;
+}
+
+#rightsidebar ul ul ul li a:hover {
+	background: #FFF2C1;
+	color: #004100;
+}
+#rightsidebar li.active a, #rightsidebar ul ul li.active a {
+        background-color:#FFF2C1!important;
+        color:#004100!important;
+}
+#leftsidebar li.active a {
+       background-color:#FFF2C1!important;
+       color:#004100!important;
+}
+
+#footer p {
+	border-top: 1px solid #004100;
+}
+
+.posttitle, .pagetitle {
+	color: #004100;
+	border-bottom:1px dashed #004100;
+}
+
+.postmeta .postauthor, .comment-author {
+	color: #004100;
+}
+
+
+/******** HOME PAGE ************/
+
+#home-left {
+    	border-right: 1px dotted #004100;
+}
+
+#sotto-hp .col-com2 h2 a {
+    color: #004100;
+}
+.col-com2 {
+    background-color:#FFF2C1;
+}
+
+#centrecontent table th {
+	background-color: #E0FEC8;
+	border-bottom: 1px solid #004100;
+	color: #004100;
+}
+
+#centrecontent table td {
+	background-color: #FFF2C1;
+	border-bottom:1px solid #CDCDCD;
+}
+.riassunto{
+	background-color: #FFF2C1;
+}
+
+#footbar{
+	background-color: #004100;
+	color: #F0F0F0;	
+}
+

@@ -1,0 +1,52 @@
+/* stile circolare */
+
+.mittente {
+        font-size:0.8em;
+        text-align:center;
+        margin-top: 1.5em;
+        line-height: 1.4em;
+        margin-bottom: 1.5em;
+}
+.sigla {
+        font-size:0.8em;
+        margin-top: 1.5em;
+}
+
+.destinatari {
+        font-size:0.9em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+}
+.destinatari p {
+        padding-bottom:0.5em;
+        margin: 0;
+        line-height: 1.4em;
+}
+.firma {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        text-align:center;
+}
+.firma1, .firma2 {
+    text-align:center;
+    float:left;
+    width:35%;
+}
+.firma p, .firma1 p, .firma2 p {
+    display:block;
+}
+
+.firma1 img, .firma2 img {
+margin-right:auto;
+margin-left:auto;
+}
+
+.oggetto {
+        font-size:0.95em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+}
+/*
+address {
+font-size: 0.9em;
+}

@@ -1,0 +1,108 @@
+body {
+    background: #5F7F5F;
+}
+
+/******** sfumato o no ************/
+
+#header {
+    background: url("images/middleSfuma.jpg") repeat-x scroll left top transparent;
+}
+
+#leftsidebar ul li.categories, 
+#leftsidebar ul li.widget_nav_menu {
+background: transparent url(images/menuSfuma.jpg) left top repeat-x;
+}
+
+#footer {
+	background: transparent url(images/menuSfuma.jpg) left bottom repeat-x;
+}
+
+
+/******** FINE sfumato o no ************/
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #004100;
+}
+
+#topbar{
+	background-color: #004100;
+	color: #F0F0F0;	
+}
+#postnavigation .navheader {
+	color: #004100; 
+}
+#leftsidebar h2 
+{
+	color: #004100;
+	border-bottom: 1px solid #004100;
+}
+#leftsidebar h2 a{
+	color: #fff;
+	background:#004100;
+}
+
+#leftsidebar ul ul li {
+	border-bottom: 1px dotted #004100;
+}
+
+#rightsidebar ul, #leftsidebar h2 a:hover, #leftsidebar ul ul ul li a:hover, #leftsidebar ul ul li a:hover, #rightsidebar h2 a:hover, #rightsidebar ul ul li a:hover, #rightsidebar ul ul ul li a:hover {
+	background: #EEF6EE;
+	color: #004100;
+}
+
+#rightsidebar h2 {
+	color: #004100;
+	border-bottom: 1px dotted #004100;
+}
+
+#rightsidebar li.active a, #rightsidebar ul ul li.active a, #leftsidebar li.active a {
+        background-color:#EEF6EE!important;
+        color:#004100!important;
+}
+
+#footer p {
+	border-top: 1px solid #004100;
+}
+
+.posttitle, .pagetitle {
+	color: #004100;
+	border-bottom:1px dashed #004100;
+}
+
+.postmeta .postauthor, .comment-author {
+	color: #004100;
+}
+
+
+/******** HOME PAGE ************/
+
+#home-left {
+    	border-right: 1px dotted #004100;
+}
+
+#sotto-hp .col-com2 h2 a {
+    color: #004100;
+}
+.col-com2 {
+    background-color:#EEF6EE;
+}
+
+#centrecontent table th {
+	background-color: #D8EED8;
+	border-bottom: 1px solid #004100;
+	color: #004100;
+}
+
+#centrecontent table td {
+	background-color: #eef6ee;
+	border-bottom:1px solid #CDCDCD;
+}
+.riassunto{
+	background-color: #EEF6EE;
+}
+
+#footbar{
+	background-color: #004100;
+	color: #F0F0F0;	
+}
