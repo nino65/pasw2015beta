@@ -1,11 +1,5 @@
 <?php
 
-add_action('admin_menu', 'pasw2015_impostazioni_menu');
-
-function pasw2015_impostazioni_menu() {
-	add_theme_page('Impostazioni Pasw', 'PASW 2015', 'edit_theme_options', 'pasw2015-impostazioni', 'pasw2015_impostazioni');
-}
-
 function pasw2015_impostazioni() { ?>
 	<div class="wrap">
 		<h2>Impostazioni <a href="" class="add-new-h2">Pagina di Benvenuto</a> <a href="" class="add-new-h2">Supporto</a> <a href="" class="add-new-h2">Porte Aperte sul Web</a></h2>

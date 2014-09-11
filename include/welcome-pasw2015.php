@@ -1,9 +1,14 @@
 <?php
 
-add_action('admin_menu', 'pasw2015_welcome_menu');
+add_action('admin_menu', 'pasw2015_menu');
 
-function pasw2015_welcome_menu() {
-	add_theme_page('Impostazioni Pasw', 'PASW 2015', 'edit_theme_options', 'pasw2015-welcome', 'pasw2015_welcome');
+function pasw2015_menu() {
+	require ( get_template_directory() . '/include/impostazioni-pasw2015.php' );
+
+	add_menu_page('WordPress PASW 2015', 'Pasw 2015', 'manage_options', 'pasw2015', 'pasw2015_welcome', 'dashicons-screenoptions', 40);
+	add_submenu_page('pasw2015', 'Supporto', 'Supporto', 'manage_options', 'pasw2015-supporto', 'pasw2015_supporto' );
+	add_submenu_page('pasw2015', 'Plugin Consigliati', 'Plugin Consigliati', 'manage_options', 'pasw2015-plugin', 'pasw2015_plugin' );
+	add_submenu_page('pasw2015', 'Impostazioni', 'Impostazioni', 'manage_options', 'pasw2015-impostazioni', 'pasw2015_impostazioni' );
 }
 
 function pasw2015_welcome() { ?>

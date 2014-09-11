@@ -1,7 +1,6 @@
 <?php 
 
 //modifiche
-require ( get_template_directory() . '/include/impostazioni-pasw2015.php' );
 require ( get_template_directory() . '/include/welcome-pasw2015.php' );
 require (get_template_directory() . '/github/github-updater.php');
 
