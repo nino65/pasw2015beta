@@ -21,5 +21,11 @@
 				update_option('pasw2015_socialbuttons', '0');
 		}
 
+		if (isset($_POST['pasw_fluid_layout_n'])){
+				update_option('pasw_fluid_layout', '1');
+			} else {
+				update_option('pasw_fluid_layout', '0');
+		}
+
 	}
 ?>

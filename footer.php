@@ -33,14 +33,14 @@
 			    	if ($i++ != 0) {
 			    		echo ' &bull; ';
 			    	}
-			        echo  '<a href=" <a href="' . $menu_item->url . '">' . $menu_item->title . '</a>';
+			        echo  '<a href="' . $menu_item->url . '">' . $menu_item->title . '</a>';
 			    }
 			    echo '</p>';
 		    }
 
 		?>
 		</div>
-		<p>Sito realizzato da <?php echo get_option('pasw_Autore');?> su modello dalla comunit&agrave; di pratica <a href="http://www.porteapertesulweb.it/">Porte aperte sul web</a>
+		<p>Sito realizzato da <?php echo get_option('pasw_Autore');?> su modello dalla comunit&agrave; di pratica <a title="Porte Aperte sul Web" href="http://www.porteapertesulweb.it/">Porte aperte sul web</a><font title="2015 v 0.2.4"> <></font>
 		</p>
 	</p>
 </div>

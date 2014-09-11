@@ -20,8 +20,6 @@ $category = "catid=".$catid;
 ?>
 <!-- fine breadcrumbs -->
 <?php if (is_category()) { ?>
-<p>RSS: <a href ="<?php echo get_category_link($cat);?>feed">
-sottoscrivi '<?php single_cat_title(); ?>' post</a></p>
 <?php } ?>
 	<?php if (have_posts()) : ?>
 	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -42,8 +40,6 @@ sottoscrivi '<?php single_cat_title(); ?>' post</a></p>
 	<?php /* If this is a tag archive */ } elseif (is_tag()){ ?>
 		<h2 class="pagetitle">Archivi per argomento (tag) '<?php single_tag_title(); ?>'</h2>
 	<?php } ?>
-	<!--<h3 class="posttitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent link to'); ?> <?php single_cat_title(); ?>"><?php single_cat_title(); ?></a></h3>
-	-->
 		<?php
 		
 		
@@ -90,52 +86,6 @@ sottoscrivi '<?php single_cat_title(); ?>' post</a></p>
 <div class="alignright"><?php previous_posts_link('Comunicazioni successive &raquo;') ?></div>
 </div>
 <div style="clear:both"></div>
-<!--<h3>Archivio <?php echo get_the_time('Y')?></h3>
- <ul>
- --><?php
-/*function archivi_anno_corrente ($sql) {
-global $mist_time;
-$post = $posts[0];
-if (is_year()) {
-if (!isset($mist_time)) {
-$mist_time = get_the_time('Y');
-}
-$sql=$sql . ' AND YEAR(post_date) = ' . $mist_time;
-} else {
-$sql=$sql . ' AND YEAR(post_date) = '. get_the_time('Y'); //YEAR (CURRENT_DATE) ';
-}
-return $sql;
-}
-//echo $category.'&limit='.date("m");
-//wp_get_archives($category.'&limit='.date("m"));
-add_filter ('getarchives_where','archivi_anno_corrente');
-wp_get_archives($category);
-remove_filter ('getarchives_where','archivi_anno_corrente');
-/*/?>
-<!-- </ul>
- -->
-<!-- <h3>Archivio per anni</h3>
-<ul>
- --><?php
-/*
-function escludi_archivi_anno_corrente ($sql) {
-	global $mist_time;
-	if (is_year()) {
-		if (!isset($mist_time)) {
-			$mist_time = get_the_time('Y');
-			}
-			$sql=$sql . ' AND YEAR(post_date) != ' . $mist_time;
-		} else {
-			$sql=$sql . ' AND YEAR(post_date) != ' . get_the_time('Y'); //< YEAR (CURRENT_DATE) ';
-	}
-	return $sql;
-}
-add_filter ('getarchives_where','escludi_archivi_anno_corrente');
-wp_get_archives($category.'&type=yearly');
-remove_filter ('getarchives_where','escludi_archivi_anno_corrente');
-*/?>
-<!-- </ul>
- -->
 	<?php endif; ?>
 	</div>
 <?php include(TEMPLATEPATH . '/rightsidebar.php'); ?>

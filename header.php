@@ -56,9 +56,9 @@ if ($descrizione) { ?>
 
 </head>
 
-<body>
+<body class="custom-background">
 
-<div id="wrapper">
+<div id="wrapper" <?php if (get_option('pasw_fluid_layout') == '0') { echo 'style="max-width: 1150px;"'; } ?>>
 
 <div class="nascosto">
 
@@ -76,7 +76,7 @@ if ($descrizione) { ?>
 
 </div>
 
-<div id="header">
+<div id="header" style="background: url(<?php header_image(); ?>);">
 
 <!--<ul class="sito">-->
 
@@ -85,7 +85,6 @@ if ($descrizione) { ?>
 <!--</ul>-->
 
 <?php
-
 if (get_option('Pasw_Logo_img') != ''){
 
 	if(file_exists(TEMPLATEPATH.'/images/'.basename(get_option('Pasw_Logo_img')))){ 
@@ -125,7 +124,7 @@ if (get_option('Pasw_Logo_img') != ''){
 ?>
 </div>
 
-<a href="<?php echo get_settings('home'); ?>"><img src="<?php echo get_bloginfo("template_url").'/images/'.basename(get_option('Pasw_Logo_img')); ?>" alt="<?php echo get_option('Pasw_Logo_alt'); ?>" class="logo" width="<?php echo $width; ?>" height="<?php echo $height; ?>" /></a>
+<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_bloginfo("template_url").'/images/'.basename(get_option('Pasw_Logo_img')); ?>" alt="<?php echo get_option('Pasw_Logo_alt'); ?>" class="logo" width="<?php echo $width; ?>" height="<?php echo $height; ?>" /></a>
 
 <h1><?php bloginfo('name'); ?></h1><?php // echo stripslashes(get_option('Pasw_Testa')); ?>
 <?php echo stripslashes(get_bloginfo('description')); ?>
@@ -133,6 +132,13 @@ if (get_option('Pasw_Logo_img') != ''){
 </div>
 
 <div id="topbar">
+
+		<form name="Motore di ricerca interno" style="float:right;padding: 1px;" method="get" id="searchform" action='<?php echo bloginfo('url');?>' >
+			<div><label class="screen-reader-text" for="s">Cerca:</label>
+				<input type="text" value="" name="s" id="s" />
+				<input type="submit" id="searchsubmit" value="Cerca" />
+			</div>
+		</form>
 
 <?php
 

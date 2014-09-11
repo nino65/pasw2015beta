@@ -16,9 +16,13 @@ function pasw2015_impostazioni() { ?>
 				<div class="welcome-panel-column-container">
 					<div class="welcome-panel-column">
 						<h4>Stile</h4>
-						<label for="fluid">layout fluido:</label>
-						<input id="fluid" type="checkbox" name="pasw_recapito_scuola_n" value="1" class="regular-text">
 						
+						<input id="fluid" type="checkbox" name="pasw_fluid_layout_n"
+						<?php $get_pasw_fluid_layout = get_option('pasw_fluid_layout');
+						if ($get_pasw_fluid_layout == '1') { echo 'checked="checked" '; } ?>><label for="fluid">layout allargato (fluido)</label>
+					<ul>
+						<li><a href="themes.php?page=custom-background" class="welcome-icon welcome-view-site">Cambia immagine o colore di sfondo</a></li>
+					</ul>
 					</div>
 					<div class="welcome-panel-column">
 						<h4>Homepage</h4>

@@ -40,7 +40,7 @@ function pasw2015_welcome() { ?>
 	<span class="title">San Pellegrino Terme</span>
 </li>
 <li class="wp-person" id="wp-person-ryan">
-	<a href="http://profiles.wordpress.org/ryan"><img src="http://0.gravatar.com/avatar/c22398fb9602c967d1dac8174f4a1a4e?s=60" class="gravatar" alt="Ryan Boren"></a>
+	<a href="http://profiles.wordpress.org/ryan"><img src="http://www.gravatar.com/avatar/a5294e8762346dbbfa62e6fee71b3614.jpg?s=60" class="gravatar" alt="Ryan Boren"></a>
 	<a class="web" href="http://profiles.wordpress.org/ryan">Renata Durighello</a>
 	<span class="title">Lead Developer</span>
 </li>

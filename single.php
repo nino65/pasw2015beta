@@ -28,7 +28,7 @@
 			
 			<p class="postmeta">
 			<?php if (!is_page()) { ?>
-			<span class="postauthor"><?php _e('Pubblicato il '); ?><?php the_time('j M y') ?> <?php _e('alle'); ?> <?php the_time() ?></span> 
+			<span class="postauthor">Pubblicato il <?php the_time('j M y') ?> alle <?php the_time() ?></span> 
 			<?php if ( is_callable(array('GeoMashup','show_on_map_link')) ) {
 				$linkString = GeoMashup::show_on_map_link('text=Map%20&show_icon=false');
 				if ($linkString != "")
