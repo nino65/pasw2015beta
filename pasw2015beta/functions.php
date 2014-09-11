@@ -12,6 +12,7 @@ function reg_set_p() {
 	register_setting( 'pasw2015_options', 'pasw_recapito_scuola');
 	register_setting( 'pasw2015_options', 'pasw_indirizzo_scuola');
 	register_setting( 'pasw2015_options', 'pasw_fluid_width');
+  register_setting( 'pasw2015_options', 'pasw_loghi_footer');
 
 	add_option( 'pasw2015_version');
 	if (version_compare(get_option('pasw2015_version'), get_pasw2015_version(), "<")) {
@@ -21,8 +22,7 @@ function reg_set_p() {
 }
 
 function get_pasw2015_version() {
-	$theme_data = get_theme_data( get_theme_root() . '/pasw2015beta/style.css' );
-	return $theme_data['Version'];
+  return wp_get_theme()->get( 'Version' );
 }
 
 $defaults = array(

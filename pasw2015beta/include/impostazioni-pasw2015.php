@@ -25,20 +25,10 @@ function pasw2015_impostazioni() { ?>
 					</ul>
 					</div>
 					<div class="welcome-panel-column">
-						<h4>Homepage</h4>
-						<ul>
-							<li><a href="http://127.0.0.1/pasw2015beta/wp-admin/post.php?post=5&amp;action=edit" class="welcome-icon welcome-edit-page">Edit your front page</a></li>
-							<li><a href="http://127.0.0.1/pasw2015beta/wp-admin/post-new.php?post_type=page" class="welcome-icon welcome-add-page">Add additional pages</a></li>
-							<li><a href="http://127.0.0.1/pasw2015beta/" class="welcome-icon welcome-view-site">View your site</a></li>
-						</ul>
+						
 					</div>
 					<div class="welcome-panel-column welcome-panel-last">
-						<h4>Font</h4>
-						<ul>
-							<li><div class="welcome-icon welcome-widgets-menus">Manage <a href="http://127.0.0.1/pasw2015beta/wp-admin/widgets.php">widgets</a> or <a href="http://127.0.0.1/pasw2015beta/wp-admin/nav-menus.php">menus</a></div></li>
-							<li><a href="http://127.0.0.1/pasw2015beta/wp-admin/options-discussion.php" class="welcome-icon welcome-comments">Turn comments on or off</a></li>
-							<li><a href="http://codex.wordpress.org/First_Steps_With_WordPress" class="welcome-icon welcome-learn-more">Learn more about getting started</a></li>
-						</ul>
+						
 					</div>
 				</div>
 			</div>
@@ -50,16 +40,18 @@ function pasw2015_impostazioni() { ?>
 				<p class="about-description">Personalizza la testata del tuo sito istituzionale</p>
 				<div class="welcome-panel-column-container">
 					<div class="welcome-panel-column">
-						<h4>Logo</h4>
-						<a class="button button-primary button-hero load-customize hide-if-no-customize" href="http://127.0.0.1/pasw2015beta/wp-admin/customize.php">Customize Your Site</a>
-						<a class="button button-primary button-hero hide-if-customize" href="http://127.0.0.1/pasw2015beta/wp-admin/themes.php">Customize Your Site</a>
-						<p class="hide-if-no-customize">or, <a href="http://127.0.0.1/pasw2015beta/wp-admin/themes.php">change your theme completely</a></p>
+					
 					</div>
 					<div class="welcome-panel-column">
 						<h4>Indirizzo Scuola</h4>
 						<ul>
 							<li><a href="http://127.0.0.1/pasw2015beta/wp-admin/post.php?post=5&amp;action=edit" class="welcome-icon welcome-edit-page">Modifica la descrizione del sito</a></li>
 						</ul>	
+					</div>
+					<div class="welcome-panel-column welcome-panel-last">
+						<h4>Loghi Footer</h4>
+						<textarea name="pasw_loghi_footer_n">
+						<?php echo html_entity_decode(get_option('pasw_loghi_footer')); ?></textarea>
 					</div>
 				</div>
 			</div>

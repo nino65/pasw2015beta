@@ -3,9 +3,8 @@
 
 <div class="imglinks">
 	<img src="http://jforum.net/imgs/large-footer-separator.png"><br/>
-	<a href="http://www.istruzione.it/"><img style="width: 97px; height: 80px;" src="http://www.icsanpellegrino.gov.it/wp-content/themes/warmwinter/images/miur.jpg" alt="MIUR"></a>
-	<a href="http://europa.eu/"><img style="width: 120px; height: 80px;" src="http://www.icsanpellegrino.gov.it/wp-content/themes/warmwinter/images/European-Union_flag.gif" alt="Unione Europea"></a>
-	<a href="http://www.comune.sanpellegrinoterme.bg.it"><img style="width: 93px; height: 80px;" src="http://www.icsanpellegrino.gov.it/wp-content/themes/warmwinter/images/Logo_comune_san_pellegrino_terme.png" alt="Comune di San Pellegrino Terme"></a>
+	<?php echo html_entity_decode(get_option('pasw_loghi_footer')); ?>
+
 	<br/><img src="http://jforum.net/imgs/large-footer-separator.png">
 <div class="clear"></div>
 &copy; 2014 <?php bloginfo('name'); ?>

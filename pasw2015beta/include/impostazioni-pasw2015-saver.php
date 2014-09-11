@@ -11,6 +11,7 @@
         update_option( 'pasw_recapito_scuola', $_POST["pasw_recapito_scuola_n"] );
         update_option( 'pasw_email_scuola', $_POST["pasw_email_scuola_n"] );
         update_option( 'pasw_indirizzo_scuola', $_POST["pasw_indirizzo_scuola_n"] );
+        update_option( 'pasw_loghi_footer', htmlentities(stripslashes($_POST["pasw_loghi_footer_n"])) );
 
         $get_recapito_scuola = $_POST["pasw_recapito_scuola_n"];
         update_option( 'pasw_recapito_scuola', $get_recapito_scuola );
