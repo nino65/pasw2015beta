@@ -12,6 +12,17 @@ function reg_set_p() {
 	register_setting( 'pasw2015_options', 'pasw_recapito_scuola');
 	register_setting( 'pasw2015_options', 'pasw_indirizzo_scuola');
 	register_setting( 'pasw2015_options', 'pasw_increased_width');
+
+	add_option( 'pasw2015_version');
+	if (version_compare(get_option('pasw2015_version'), get_pasw2015_version(), "<")) {
+		update_option('pasw2015_version', get_pasw2015_version());
+		wp_safe_redirect(admin_url('/admin.php?page=pasw2015', 'http'), 301);
+	}
+}
+
+function get_pasw2015_version() {
+	$theme_data = get_theme_data( get_theme_root() . '/pasw2015beta/style.css' );
+	return $theme_data['Version'];
 }
 //--
 require ( get_template_directory() . '/include/theme-options.php' );
