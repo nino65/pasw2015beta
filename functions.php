@@ -35,7 +35,7 @@ add_theme_support( 'custom-background', $defaults );
 $args = array(
 	'width'         => 1150,
 	'height'        => 110,
-	'default-image' => 'http://www.psdgraphics.com/file/colorful-triangles-background.jpg',
+	'default-image' => ''
 );
 add_theme_support( 'custom-header', $args );
 
