@@ -7,12 +7,13 @@ require (get_template_directory() . '/github/github-updater.php');
 add_action('admin_init', "reg_set_p");
 
 function reg_set_p() {
-	register_setting( 'pasw2015_options', 'pasw2015_socialbuttons');
+	register_setting( 'pasw2015_options', 'pasw_social');
 	register_setting( 'pasw2015_options', 'pasw_email_scuola');
 	register_setting( 'pasw2015_options', 'pasw_recapito_scuola');
 	register_setting( 'pasw2015_options', 'pasw_indirizzo_scuola');
 	register_setting( 'pasw2015_options', 'pasw_fluid_width');
   register_setting( 'pasw2015_options', 'pasw_loghi_footer');
+  register_setting( 'pasw2015_options', 'pasw_logo');
 
 	add_option( 'pasw2015_version');
 	if (version_compare(get_option('pasw2015_version'), get_pasw2015_version(), "<")) {
@@ -38,9 +39,6 @@ $args = array(
 	'default-image' => ''
 );
 add_theme_support( 'custom-header', $args );
-
-//--
-require ( get_template_directory() . '/include/theme-options.php' );
 
 add_theme_support('post-thumbnails');
 /* Menu */

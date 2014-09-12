@@ -1,12 +1,16 @@
 </div>
 <div class="clear"></div>
 
-<div class="imglinks">
-	<img src="http://jforum.net/imgs/large-footer-separator.png"><br/>
-	<?php echo html_entity_decode(get_option('pasw_loghi_footer')); ?>
+	<div class="imglinks">
+		
+		<?php if (get_option('pasw_loghi_footer')!= '') { ?>
+		<img src="<?php echo get_template_directory_uri() . '/images/footsep.png'; ?>"><br/>
+		<?php echo html_entity_decode(get_option('pasw_loghi_footer')); ?>
 
-	<br/><img src="http://jforum.net/imgs/large-footer-separator.png">
-<div class="clear"></div>
+		<br/><img src="<?php echo get_template_directory_uri() . '/images/footsep.png'; ?>">
+	<div class="clear"></div>
+	<?php } ?>
+
 &copy; 2014 <?php bloginfo('name'); ?>
 <br/>
 <small>
@@ -39,7 +43,7 @@
 
 		?>
 		</div>
-		<p>Sito realizzato da <?php echo get_option('pasw_Autore');?> su modello dalla comunit&agrave; di pratica <a title="Porte Aperte sul Web" href="http://www.porteapertesulweb.it/">Porte aperte sul web</a><font title="2015 v 0.2.4"> <></font>
+		<p>Sito realizzato<?php if (get_option('pasw_Autore')) { echo ' da ' . get_option('pasw_Autore'); }?> su modello dalla comunit&agrave; di pratica <a title="Porte Aperte sul Web" href="http://www.porteapertesulweb.it/">Porte aperte sul web</a><font title="PASW2015 v<?php echo get_option('pasw2015_version'); ?>"> <></font>
 		</p>
 	</p>
 </div>

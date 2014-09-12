@@ -40,24 +40,6 @@ h1, h2, h3, h4, h5, h6 {
 #postnavigation .navheader {
 	color: #25385D; 
 }
-#leftsidebar h2 
-{
-	color: #25385D;
-	border-bottom: 1px solid #25385D;
-}
-#leftsidebar h2 a{
-	color: #fff;
-	background:#25385D;
-}
-
-#leftsidebar ul ul li {
-	border-bottom: 1px dotted #25385D;
-}
-
-#rightsidebar ul, #leftsidebar h2 a:hover, #leftsidebar ul ul ul li a:hover, #leftsidebar ul ul li a:hover, #rightsidebar h2 a:hover, #rightsidebar ul ul li a:hover, #rightsidebar ul ul ul li a:hover {
-	background: #DEEFF6;
-	color: #25385D;
-}
 
 #rightsidebar h2 {
 	color: #25385D;

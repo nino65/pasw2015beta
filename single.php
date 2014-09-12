@@ -40,7 +40,7 @@
 			&#183; <?php _e('Contenuto in:'); ?> <?php the_category(', ') ?>
 			<?php $posttags = get_the_tags($post->ID); 
 							if ($posttags) { ?>
-								<span>- Tag:</span>
+								<span><br/>Tag:</span>
 								<?php 
 								foreach($posttags as $tag) {
 									echo '<a href="';
@@ -52,7 +52,6 @@
 							}
 			?>
 			<?php } ?>
-			<?php edit_post_link(__('Edit'), ' &#183; ', ''); ?>
 			</p>	
 		
 <div class="postentry">
@@ -66,20 +65,11 @@ echo '</div>';
 } ?>
 <?php the_content(__('Leggi il resto &raquo;')); ?>
 <?php wp_link_pages(); ?>
-<?php if(get_option('Pasw_Social')==1) : ?>
+<?php if (get_option('Pasw_Social')) : ?>
 	
-	<ul class="socialnet">
-	<li class="face">
-		<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php echo urlencode(get_the_title($id)); ?>" title="Condividi questo post su Facebook"><img src="<?php echo bloginfo("home");?>/wp-content/themes/Pasw2013/images/fb-20.png" alt="Condividi questo post su Facebook" /></a>
-	</li>
-	<li class="twit">
-		<a href="https://twitter.com/share" class="twitter-share-button" title="Condividi con i tuoi followers di Twitter">Tweet</a>
-		<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</li>
-	<li class="plusone">
-		<div class="g-plusone"></div>
-	</li>
-	</ul>
+	<div class="share42init" data-url="<?php the_permalink() ?>" data-title="<?php the_title() ?>"></div>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/share42/share42.js';?>"></script>
+
 <?php endif; ?>
 </div>
 			<p class="postfeedback">
