@@ -16,16 +16,6 @@
 
 <!-- <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> -->
 
-<?php if(get_option('Pasw_Stile')!=''){?>
-
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/<?php echo get_option('Pasw_Stile'); ?>" media="screen" />
-
-	<?php }else{?>
-
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/blu.css" media="screen" />
-
-<?php }?>
-
 <link rel="shortcut icon" type="image/ico" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
