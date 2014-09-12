@@ -2,7 +2,7 @@
 Theme Name: PASW 2015
 Description:
 Author: Comunità di pratica Porte aperte sul web - USR Lombardia
-Version: 0.3.3
+Version: 0.3.4
 Tags:
 GitHub Theme URI: https://github.com/PorteAperteSulWeb/pasw2015beta
 GitHub Branch: master
@@ -480,6 +480,7 @@ display:block;
 
 #leftsidebar ul {
 list-style-image:url(images/li_image.gif);
+background-color: #C2E2ED;
 font-size:95%;
 margin:0;
 padding:0;
@@ -534,9 +535,6 @@ padding:0 10px 0 25px;
 font-size:.85em;
 margin:.6em 0 .3em;
 display:block;
-/*padding-left:0.6em;	*/
-/*	padding-top:3px;*/
-/*	background:#004100;*/
 text-decoration:none;
 font-weight:700;
 }
@@ -590,21 +588,12 @@ text-decoration:underline;
 margin:.1em 0 .8em;
 border:0;
 font-size:85%;
-/*border-top: 1px solid #E8E8CE;
-
-
-
-	background-color: #FAFAF0;*/
 }
 
 #rightsidebar ul ul li {
 padding-bottom:4px;
 border-bottom:1px dotted #C2E3ED;
-/*padding: 0 0 0 10px;
-
-
-
-	border-bottom: 1px solid #E8E8CE;*/
+border-bottom: 1px solid #E8E8CE;*/
 }
 
 #rightsidebar ul ul li a {
@@ -672,8 +661,6 @@ margin:0 0 1.2em;
 voice-family: "\"}\"";
 voice-family:inherit;
 width:160px;
-/*border: 1px solid #E8E8CE;*/
-/*background: #FAFAF0;	*/
 }
 
 html>body #wp-calendar {
@@ -868,27 +855,6 @@ padding:0;
 max-width:100%;
 }
 
-/*	
-
-
-
-	Using 'class="alignright"' on an image will (who would've
-
-
-
-	thought?!) align the image to the right. And using 'class="centered',
-
-
-
-	will of course center the image. This is much better than using
-
-
-
-	align="center", being much more futureproof (and valid) 
-
-
-
-*/
 .aligncenter,div.aligncenter,img.centered {
 display:block;
 margin-left:auto;
@@ -1062,7 +1028,6 @@ font-style:italic;
 margin-left:auto;
 margin-right:auto;
 width:99%;
-/*border: 10px solid #0066CC;*/
 margin-top:1em;
 margin-bottom:1em;
 font-size:.8em;
@@ -1428,36 +1393,12 @@ border-bottom:none;
 
 
 /* BLU */
-body {
-    background: #719AD9;
-}
-
-/******** sfumato o no ************/
-
-#header {
-   /* background: url("images/middleSfuma.jpg") repeat-x scroll left top transparent;*/
-}
-
-#leftsidebar ul li.categories, 
-#leftsidebar ul li.widget_nav_menu {
-      /* background: transparent url(images/menuSfuma.jpg) left top repeat-x;*/
-         background: #C2E2ED;
-}
-
-#footer {
-	/*background: transparent url(images/menuSfuma.jpg) left bottom repeat-x;*/
-}
-
 
 #leftsidebar .current_page_item a, #leftsidebar .current_page_item ul li a {
 	color: #25385D !important;
 	text-decoration:none;
 	background-color: #DEEFF6;
 }
-
-
-/******** FINE sfumato o no ************/
-
 
 h1, h2, h3, h4, h5, h6 {
 	color: #25385D;
