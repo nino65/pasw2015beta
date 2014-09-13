@@ -2,7 +2,7 @@
 Theme Name: PASW 2015
 Description:
 Author: Comunità di pratica Porte aperte sul web - USR Lombardia
-Version: 0.3.8
+Version: 0.3.9
 Tags:
 GitHub Theme URI: https://github.com/PorteAperteSulWeb/pasw2015beta
 GitHub Branch: master
@@ -907,12 +907,17 @@ margin:1px;
 }
 
 .wp-caption {
-background:#F0F0F0;
+margin: 5px;
+font-style: italic;
 }
 
 .wp-caption-text {
-font-size:90%;
-padding:0 4px;
+font-size: 90%;
+margin-top: 0px;
+text-align: center;
+border-radius: 5px;
+border-bottom: 1px solid #25385D;
+padding-bottom: 2px;
 }
 
 /******************* Geo Mashup *********************/
