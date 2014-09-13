@@ -44,23 +44,59 @@ add_theme_support('post-thumbnails');
 /* Menu */
 add_action('init', 'register_my_menus');
 function register_my_menus() {
-register_nav_menus(
-	array(
-		'menu-1' => __('Menu 1'),
-		'menu-2' => __('Menu 2'),
-		'menu-3' => __('Menu 3'),
-	)
-);
+  register_nav_menus(
+  	array(
+  		'menu-1' => __('Menu 1'),
+  		'menu-2' => __('Menu 2'),
+  		'menu-3' => __('Menu 3'),
+  	)
+  );
 }
-/* prima creo le sidebar per le barre laterali */
-if ( function_exists('register_sidebars') )
-	register_sidebars(2);
-/* inserisco aree-widget nel footer e nell'header*/
-if ( function_exists('register_sidebar') ){
-register_sidebar(Array("name" => "sottohome1"));
-register_sidebar(Array("name" => "sottohome2"));
-register_sidebar(Array("name" => "sottohome3"));
-    }
+
+function pasw2015_widgets_init() {
+  register_sidebar( array(
+        'name' => 'Barra laterale (SX)',
+        'id' => 'sidebar-1',
+        'description' => 'Sidebar sinistra del sito web.'
+    ) );
+    register_sidebar( array(
+        'name' => 'Barra laterale (DX)',
+        'id' => 'sidebar-2',
+        'description' => 'Sidebar destra del sito web.'
+    ) );
+    register_sidebar( array(
+        'name' => 'Sotto home (SX)',
+        'id' => 'sidebar-3',
+        'description' => 'Area Widget (1) sotto la homepage.'
+    ) );
+    register_sidebar( array(
+        'name' => 'Sotto home (CX)',
+        'id' => 'sidebar-4',
+        'description' => 'Area Widget (2) sotto la homepage.'
+    ) );
+    register_sidebar( array(
+        'name' => 'Sotto home (DX)',
+        'id' => 'sidebar-5',
+        'description' => 'Area Widget (3) sotto la homepage.'
+    ) );
+    register_sidebar( array(
+        'name' => 'Home (SX)',
+        'id' => 'sidebar-6',
+        'description' => 'Area Widget (1) della homepage.'
+    ) );
+    register_sidebar( array(
+        'name' => 'Home (CX)',
+        'id' => 'sidebar-7',
+        'description' => 'Area Widget (2) della homepage.'
+    ) );
+    register_sidebar( array(
+        'name' => 'Home (SX)',
+        'id' => 'sidebar-8',
+        'description' => 'Area Widget (3) della homepage.'
+    ) );
+}
+add_action( 'widgets_init', 'pasw2015_widgets_init' );
+
 /* returns the count of comments or pings depending */ 
 function comment_count_special($post_id, $comment_type)  
 {

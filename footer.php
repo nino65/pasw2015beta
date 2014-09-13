@@ -11,7 +11,7 @@
 	<div class="clear"></div>
 	<?php } ?>
 
-&copy; 2014 <?php bloginfo('name'); ?>
+<?php bloginfo('name'); ?>  2014
 <br/>
 <small>
 	PEC: codicemecc@pec.istruzione.it - Cod.Mecc. codicemecc - Cod.Fisc. 12 345 678 901<br/>

@@ -43,7 +43,12 @@ function pasw2015_impostazioni() { ?>
 
 					</div>
 					<div class="welcome-panel-column welcome-panel-last">
-						
+						<h4>Homepage</h4>
+						<p>La prima pagina di Pasw2015 è composta da 3 fasce orizzontali.</p>
+						<ul>
+							<li><a href="themes.php?page=custom-background" class="welcome-icon welcome-view-site">Modifica 1a Fascia (testo homepage)</a></li>
+							<li><a href="themes.php?page=custom-background" class="welcome-icon welcome-view-site">Modifica 2a/3a Fascia (widget)</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
