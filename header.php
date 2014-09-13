@@ -66,14 +66,11 @@ if ($descrizione) { ?>
 
 </div>
 
-<div id="header" style="background: url(<?php header_image(); ?>);">
+<div id="header" style="background: url(<?php header_image(); ?>);color:#<?php header_textcolor(); ?>;"">
 
-<!--<ul class="sito">-->
 
 <?php wp_nav_menu( array( 'menu' => '', 'container' => 'ul', 'menu_class' => 'sito', 'theme_location' => 'menu-1' ) ); ?>
-
-<!--</ul>-->
-
+<div class="clear"></div>
 <?php
 if (get_option('Pasw_Logo_img') != ''){
 
@@ -116,7 +113,7 @@ if (get_option('Pasw_Logo_img') != ''){
 
 <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_bloginfo("template_url").'/images/'.basename(get_option('Pasw_Logo_img')); ?>" alt="<?php echo get_option('Pasw_Logo_alt'); ?>" class="logo" width="<?php echo $width; ?>" height="<?php echo $height; ?>" /></a>
 
-<h1><?php bloginfo('name'); ?></h1><?php // echo stripslashes(get_option('Pasw_Testa')); ?>
+<h1 style="color:#<?php header_textcolor(); ?>;"><?php bloginfo('name'); ?></h1><?php // echo stripslashes(get_option('Pasw_Testa')); ?>
 <?php echo stripslashes(get_bloginfo('description')); ?>
 
 </div>
